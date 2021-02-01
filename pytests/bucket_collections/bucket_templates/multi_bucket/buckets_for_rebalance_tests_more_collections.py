@@ -5,7 +5,7 @@ spec = {
     MetaConstants.NUM_BUCKETS: 3,
     MetaConstants.NUM_SCOPES_PER_BUCKET: 5,
     MetaConstants.NUM_COLLECTIONS_PER_SCOPE: 40,
-    MetaConstants.NUM_ITEMS_PER_COLLECTION: 5000,
+    MetaConstants.NUM_ITEMS_PER_COLLECTION: 500,
     MetaConstants.REMOVE_DEFAULT_COLLECTION: False,
 
     Bucket.bucketType: Bucket.Type.MEMBASE,
@@ -22,8 +22,8 @@ spec = {
 
     "buckets": {
         "default": {
-            MetaConstants.NUM_ITEMS_PER_COLLECTION: 2500,
-            Bucket.ramQuotaMB: 2000,
+            MetaConstants.NUM_ITEMS_PER_COLLECTION: 250,
+            Bucket.ramQuotaMB: 200,
             Bucket.bucketType: Bucket.Type.MEMBASE,
             "privileges": [
                 "Perm1"
